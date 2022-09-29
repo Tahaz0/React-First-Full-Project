@@ -1,0 +1,103 @@
+header {
+    height: 100vh;
+    padding-top: 7rem;
+}
+.header-container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+/* *******************CTA START ************************** */
+
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+
+}
+
+/* *******************CTA START ends ************************** */
+
+
+/* **************header social START * ************************ */
+
+.header-social {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+}
+.header-social::after {
+content: '';
+width: 1px;
+height: 2rem;
+background-color: var( --color-primary);
+}
+
+
+/* **************header social ends * ************************ */
+
+
+
+/* ************** Img ME * * ************************ */
+
+.me {
+    background: linear-gradient(var(--color-primary), transparent);
+    width: 22rem;
+    height: 30rem;
+    position: absolute;
+    left: calc(50% - 11rem);
+    /* transform: translateX(-50%); */
+    margin-top: 4rem;
+    border-radius: 12rem 12rem 0 0;
+    padding: 5rem 1.3rem 1.2rem 1.3rem;
+    overflow: hidden;
+}
+/* .me img {
+    height: 100%;
+} */
+
+/* ************** Img ME ENDS * * ************************ */
+
+
+
+/* ************** SCROLL DOWN START * * ************************ */
+
+.scroll-down {
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-size: .8rem;
+    font-weight: 300;
+}
+
+/* ************** SCROLL DOWN ENDS * * ************************ */
+
+
+
+/* *********MEDIA QUEQIES ***********************   */
+
+  /******** for medium devices******* **/
+
+ @media screen and (max-width:1000px) {
+   .header {
+    height: 70vh;
+   }
+}
+
+
+  /******** for small devices******* ***/
+
+ @media screen and (max-width:600px) {
+    .header {
+        height: 100vh;
+    }
+   .header-social, .scroll-down {
+     visibility: hidden;
+   }
+}

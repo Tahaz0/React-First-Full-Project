@@ -1,0 +1,75 @@
+.experience-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+.experience-container > div {
+    background-color: var(--color-bg-variant);
+    padding: 3rem 4rem;
+    border-radius: 2rem;
+    border: 2px solid transparent;
+    transition: all .4s ease;
+}
+.experience-container > div:hover {
+    border-color: var(--color-primary-variant);
+    background-color: transparent;
+}
+.experience-container > div h3 {
+    text-align: center;
+    color: var(--color-primary);
+    margin-bottom: 1.6rem;
+}
+
+.experience-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    text-align: left;
+}
+
+
+.experience-details {
+    display: flex;
+    gap: 1rem;
+}
+.experience-details-icon {
+    margin-top: 6.4px;
+    color: var(--color-primary);
+}
+
+
+
+/* ***************** MEDIA QUERIES ********************* */
+
+         /****** for medium devices******* */
+
+ @media screen and (max-width:956px) {
+   .experience-container {
+    grid-template-columns: 1fr;
+   }
+   .experience-container > div {
+    width: 82%;
+    margin: 0 auto;
+    padding: 2rem;
+   }
+   .experience-content {
+    padding: 1rem;
+   }
+ }
+
+      /****** for medium devices ends******* */
+
+
+      /****** for small devices******* */
+
+ @media screen and (max-width:600px) {
+   .experience-container {
+    gap: 1.2rem;
+   }
+   .experience-container > div {
+    width: 93%;
+    padding: 1.8rem 1.6rem;
+   }
+ }
+
+      /****** for small devices ends******* */
